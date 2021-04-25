@@ -1,0 +1,134 @@
+@import '~antd/es/style/themes/default.less';
+
+.salesCard {
+  .header {
+    height: 60px;
+    line-height: 30px;
+    padding: 20px 20px 10px 0;
+
+    .title {
+      float: left;
+      border-left: 2px solid red;
+      padding-left: 10px;
+    }
+
+    .salesFilter {
+      float: right;
+
+      .salesChoose {
+        display: inline-block;
+        margin-right: 24px;
+
+        a {
+          margin-left: 24px;
+          color: @text-color;
+
+          &:hover {
+            color: @primary-color;
+          }
+
+          &.currentDate {
+            color: @primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .salesBar {
+    padding: 0 0 32px 32px;
+  }
+}
+
+.offlineCard {
+  :global {
+    .ant-tabs-ink-bar {
+      bottom: auto;
+    }
+
+    .ant-tabs-bar {
+      border-bottom: none;
+    }
+
+    .ant-tabs-nav-container-scrolling {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    .ant-tabs-tab-prev-icon::before {
+      position: relative;
+      left: 6px;
+    }
+
+    .ant-tabs-tab-next-icon::before {
+      position: relative;
+      right: 6px;
+    }
+
+    .ant-tabs-tab-active h4 {
+      color: @primary-color;
+    }
+  }
+}
+
+.trendText {
+  margin-left: 8px;
+  color: @heading-color;
+}
+
+@media screen and (max-width: @screen-lg) {
+  .salesExtra {
+    display: none;
+  }
+
+  .rankingList {
+    li {
+      span:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .rankingTitle {
+    margin-top: 16px;
+  }
+
+  .salesCard .salesBar {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .salesExtraWrap {
+    display: none;
+  }
+
+  .salesCard {
+    :global {
+      .ant-tabs-content {
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+.UserPortraitIcon {
+  display: block;
+  margin: 0 auto;
+}
+
+.UserPortraitSpan {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  font-size: 24px;
+  color: #000;
+}
+
+.tabmain {
+  :global(.ant-tabs) {
+    background-color: #fff;
+  }
+}

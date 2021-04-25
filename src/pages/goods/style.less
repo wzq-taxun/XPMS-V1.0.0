@@ -1,0 +1,31 @@
+@import '~antd/es/style/themes/default.less';
+
+.header {
+  height: 60px;
+  background: #fff;
+  line-height: 60px;
+  .tabs {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .opContain {
+    float: right;
+    .op {
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.clickRow {
+  color: green;
+}
+
+.myProtable {
+  :global {
+    .ant-legacy-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

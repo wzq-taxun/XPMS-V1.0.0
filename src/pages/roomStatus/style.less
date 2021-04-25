@@ -1,0 +1,291 @@
+@import '~antd/es/style/themes/default.less';
+
+.header {
+  background: #fff;
+  height: 60px;
+  // display: flex;
+  // justify-content: space-between;
+  .title {
+    line-height: 60px;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 20px;
+  }
+  .quick {
+    font-size: 16px;
+    line-height: 60px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .search {
+    margin-left: 10px;
+    width: 200px;
+    float: right;
+    margin: 15px 20px;
+  }
+}
+
+.roomsContain {
+  background: #fff;
+  padding: 10px;
+  height: 710px; //670
+  overflow: auto;
+}
+
+.roomIconsContain {
+  background: #fff;
+  height: 40px;
+  border-top: 1px solid #eee;
+}
+
+.staBlockContain {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  margin: 0 8px;
+  cursor: pointer;
+  > span {
+    margin-left: 5px;
+    color: #b3b3b3;
+    vertical-align: middle;
+  }
+  > span.active {
+    color: #e91e63;
+  }
+}
+
+.rightSel {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.radioStyle {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  .radioLabel {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #fff;
+  }
+  .radioNum {
+    margin-left: 15px;
+  }
+}
+
+.roomContain {
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  border-radius: 8px;
+  .roomHeader {
+    // height: 30px;
+    color: #fff;
+    padding-bottom: 2px;
+    .roomNo {
+      font-size: 14px;
+    }
+    .room_type {
+      font-size: 12px;
+      float: right;
+      margin-right: 5px;
+    }
+  }
+  .roomContent {
+    color: #fff;
+    padding: 2px 0px;
+    font-size: 12px;
+    .name {
+      float: right;
+      margin-right: 5px;
+      display: block;
+      text-align: right;
+      width: calc(100% - 55px);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .roomFooter {
+    padding-top: 2px;
+    font-size: 12px;
+    line-height: 20px;
+    height: 27px;
+    color: #fff;
+    .stateIcon {
+      display: block;
+      float: left;
+      width: 20px;
+      height: 20px;
+      line-height: 18px;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      margin-right: 5px;
+      text-align: center;
+    }
+  }
+
+  .clickMenu {
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 2px #333;
+    z-index: 999;
+    button {
+      margin: 2px;
+      border: 0;
+      outline: none;
+      width: 100%;
+      background: #5fb878;
+      font-size: 12px;
+    }
+  }
+
+  .hoverInfo {
+    width: 170%;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    padding: 2px;
+    background: #fff;
+    box-shadow: 0 0 2px #333;
+    z-index: 888;
+    .hiContent {
+      height: 380px;
+      overflow: auto;
+      div {
+        span {
+          display: inline-block;
+          padding: 5px;
+        }
+      }
+    }
+    .hiContent::-webkit-scrollbar {
+      width: 8px;
+    }
+    .hiContent::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+      background-color: #b4bbc5;
+    }
+    .hiContent::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      background: #ededed;
+    }
+    .hiFooter {
+      height: 40px;
+      text-align: center;
+      button {
+        margin: 10px 5px;
+        width: 60px;
+        height: 25px;
+        border: 0;
+        background: #5fb878;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .hoverInfoLeft {
+    left: initial;
+    right: 20%;
+  }
+
+  .hoverInfoTop {
+    top: calc(80% - 400px);
+  }
+
+  .contextMenuContain {
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 0 2px #333;
+    z-index: 999;
+    .CMmenuItem {
+      margin: 8px;
+      button {
+        //   border: 0;
+        //   outline: none;
+        width: 100%;
+        //   background: #5fb878;
+        font-size: 12px;
+        //   cursor: pointer;
+      }
+    }
+  }
+}
+
+.quickRoomTypeF {
+  padding: 5px;
+  div {
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.modalForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.floorStatusLabel {
+  margin-left: 10px;
+}
+
+.filterTabs {
+  margin-top: 15px;
+  border: 1px solid #f2f0f1;
+
+  :global {
+    .ant-tabs-nav {
+      width: 100%;
+    }
+    .ant-tabs-nav .ant-tabs-tab {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .filterPane {
+    padding: 10px;
+    height: 240px;
+    overflow: auto;
+  }
+}
+
+.roomTypeCb {
+  padding: 5px 0px;
+  width: 100%;
+  height: 30px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.allCb {
+  padding: 5px 0px;
+  width: 100%;
+}
+
+.allCbSpan {
+  width: calc(100% - 40px);
+  display: inline-block;
+  text-align: center;
+}

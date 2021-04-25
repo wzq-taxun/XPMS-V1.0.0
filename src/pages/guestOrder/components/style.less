@@ -1,0 +1,200 @@
+@import '~antd/es/style/themes/default.less';
+
+.header {
+  height: 160px;
+  background: #fff;
+
+  .typeIcon {
+    float: left;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 75px;
+    background: #e62a41;
+    color: #fff;
+    margin: 40px;
+    font-size: 70px;
+    box-shadow: 3px 3px 3px #bebebe;
+  }
+
+  .typeIconRG {
+    float: left;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 75px;
+    background: #e62a41;
+    color: #fff;
+    margin: 40px;
+    font-size: 50px;
+    box-shadow: 3px 3px 3px #bebebe;
+  }
+
+  h2 {
+    font-weight: bold;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    border-right: 1px solid #aaa;
+  }
+
+  h3 {
+    font-weight: normal;
+    color: #999;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border-right: 1px solid #aaa;
+  }
+
+  .top {
+    margin-top: 50px;
+  }
+}
+
+.rzInfoRow {
+  height: 36px;
+  padding: 3px;
+  line-height: 30px;
+  margin: 2px 0;
+
+  .inp {
+    height: 30px;
+    width: 100%;
+  }
+}
+
+.infoTitle {
+  background: #2f3754;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+
+.infoContain {
+  padding: 10px;
+  color: #888;
+  // border-right: 1px solid #eee;
+}
+
+.zkUsers {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    background: #ffff;
+    border: 1px solid #888;
+    text-align: center;
+    border-radius: 5px;
+    color: #000;
+    outline: none;
+  }
+
+  .active {
+    background: #2f3f54;
+    color: #fff;
+  }
+}
+
+.panelTable {
+  td,
+  th {
+    padding: 2px !important;
+    font-size: 13px;
+  }
+}
+
+.pfBtGroup {
+  text-align: center;
+
+  button {
+    margin: 2px;
+    background: #fff;
+    border: 1px solid #9f9f9f;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 24px;
+
+    &:last-child {
+      background: #2f3f54;
+      color: #fff;
+    }
+  }
+}
+
+.pfModal {
+  :global {
+    .ant-modal-close {
+      color: #fff;
+    }
+    .ant-modal-header {
+      background: #2f3754;
+    }
+    .ant-modal-title {
+      color: #fff;
+    }
+  }
+  .pfMdHeader {
+    padding: 10px;
+    > span {
+      line-height: 30px;
+    }
+    > input {
+      width: 120px;
+      margin: 0 10px;
+    }
+    > button {
+      width: 60px;
+      background: #2f3754;
+      color: #fff;
+      border: 0;
+      border-radius: 5px;
+      line-height: 25px;
+    }
+  }
+}
+
+.panelForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.rowPointer {
+  cursor: pointer;
+}
+
+.logDetail {
+  .label {
+    text-align: right;
+    line-height: 30px;
+    padding: 3px 5px;
+  }
+  .info {
+    text-align: left;
+    line-height: 30px;
+    padding: 3px 5px;
+  }
+}
+
+.myProtable {
+  :global {
+    .ant-legacy-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

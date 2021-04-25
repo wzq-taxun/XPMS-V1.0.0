@@ -1,0 +1,132 @@
+@import '~antd/es/style/themes/default.less';
+
+.leftIcon {
+  background: #e62a41;
+  float: left;
+  width: 90px;
+  height: 90px;
+  color: #fff;
+  font-size: 66px;
+  font-style: normal;
+  text-align: center;
+  line-height: 90px;
+  margin: 0 5px;
+}
+
+.editable {
+  td {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+}
+
+:global {
+  .ant-empty-normal {
+    margin: 16px 0;
+  }
+}
+
+.infoTable {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0 10px;
+  td {
+    border: 1px solid #dfdfdf;
+    input {
+      border: 0;
+    }
+    textarea {
+      border: 0;
+    }
+    :global {
+      .ant-select-selection {
+        border: 0;
+      }
+    }
+  }
+  .infoTableLabel {
+    width: 15%;
+    text-align: center;
+  }
+  .infoTableInp {
+    width: 35%;
+  }
+}
+
+.mytabs {
+  padding: 0 30px;
+  text-align: center;
+  .header {
+    button {
+      width: 90px;
+      height: 30px;
+      background: #fff;
+      border: 1px solid #2f3754;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+    }
+    button:last-child {
+      margin-left: 30px;
+    }
+    button.active {
+      background: #2f3754;
+      color: #fff;
+    }
+    button.active::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border: 8px solid;
+      border-color: #2f3754 transparent transparent;
+      top: 29px;
+      right: 36px;
+      z-index: 8888;
+      position: absolute;
+    }
+  }
+  .tabContent {
+    padding-top: 20px;
+    //   // height: 200px;
+    //   overflow: hidden;
+    //   // border: 1px solid #000;
+    //   .tab1{
+    //     // height: -200px;
+    //     // margin-top: 0px;
+    //     display: none;
+    //   }
+
+    //   .tab1,.active{
+    //     // margin-top: 0px;
+    //     display: block;
+    //     // transition: all 100ms ease-in;
+    //   }
+
+    //   .tab2{
+    //     // height: 200px;
+    //     // margin-top: 0px;
+    //     display: none;
+    //   }
+
+    //   .tab2,.active{
+    //     // margin-top: -200px;
+    //     // transition: all 100ms ease-in;
+    //     display: block;
+    //   }
+  }
+}
+
+.footer {
+  padding: 30px 30px 0;
+  text-align: center;
+  .submit {
+    width: 140px;
+    // height: 30px;
+    // margin-left: 60px;
+    color: #fff;
+    // background: #304055;
+    // border: 0;
+    // border-radius: 4px;
+    // cursor: pointer;
+  }
+}

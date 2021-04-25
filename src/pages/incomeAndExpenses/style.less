@@ -1,0 +1,70 @@
+@import '~antd/es/style/themes/default.less';
+
+.header {
+  height: 80px;
+  padding: 20px;
+  line-height: 40px;
+  background: #fff;
+  margin-bottom: 10px;
+  .quickDate {
+    cursor: pointer;
+    padding: 0 5px;
+    margin: 0 10px;
+  }
+}
+
+.content {
+  background: #fff;
+  padding: 20px;
+  .leftCard {
+    height: 160px;
+    border: 1px solid #e7e7e7;
+    .top {
+      padding: 20px 10px 10px;
+      height: 70px;
+      line-height: 40px;
+      .avatar {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        i {
+          vertical-align: middle;
+        }
+      }
+      > span {
+        margin-left: 10px;
+      }
+    }
+    > p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 400;
+      color: #000;
+    }
+  }
+
+  .floor {
+    > span {
+      padding-left: 10px;
+    }
+    .up,
+    .down {
+      position: relative;
+      margin-left: 4px;
+      padding-left: 0;
+    }
+    .up {
+      color: @green-6;
+    }
+    .down {
+      top: -1px;
+      color: @red-6;
+    }
+  }
+}
+

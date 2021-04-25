@@ -1,0 +1,92 @@
+@import '~antd/es/style/themes/default.less';
+
+.leftIcon {
+  background: #e62a41;
+  float: left;
+  width: 90px;
+  height: 90px;
+  color: #fff;
+  font-size: 66px;
+  font-style: normal;
+  text-align: center;
+  line-height: 90px;
+  margin: 0 5px;
+}
+
+.myCardHead {
+  padding: 0;
+  min-height: 40px;
+  border-bottom: 0;
+}
+
+.cardInfoTitle {
+  background: #2f3f54;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+.cardInfoTitle::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 20px solid;
+  border-color: transparent transparent transparent #2f3f54;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+
+.infoTitle {
+  margin: 0;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.myForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tableOp {
+  // height: 30px;
+  margin: 10px 0;
+  text-align: center;
+  button {
+    margin: 0 10px;
+    width: 140px;
+    height: 34px;
+    // margin-left: 20px;
+    // // background: #2f3f56;
+    // // color: #fff;
+    // // border-radius: 4px;
+    // // border: 0;
+    // // cursor: pointer;
+    // // &:last-child {
+    // //   background: #e52942;
+    // // }
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  button {
+    width: 140px;
+    height: 34px;
+    // border: 1px solid #eeeeee;
+    // border-radius: 4px;
+  }
+  .submit {
+    margin-left: 30px;
+    background: #e52942;
+    color: #fff;
+    cursor: pointer;
+  }
+}

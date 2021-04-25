@@ -1,0 +1,70 @@
+@import '~antd/es/style/themes/default.less';
+
+.header {
+  height: 30px;
+  background: #fff;
+  line-height: 30px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+
+  .exit {
+    float: right;
+    cursor: pointer;
+  }
+}
+
+.rowSty {
+  cursor: pointer;
+}
+
+.searchForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.guestTable {
+  :global {
+    .ant-table-body {
+      min-height: 523px;
+    }
+
+    .ant-table-empty .ant-table-body {
+      min-height: initial;
+    }
+  }
+}
+
+.mytable {
+  :global {
+    .ant-legacy-form-item {
+      margin-bottom: 0;
+    }
+
+    .ant-table-body {
+      min-height: 500px;
+    }
+
+    .ant-table-empty .ant-table-body {
+      min-height: initial;
+    }
+  }
+}
+
+:global {
+  .ant-pro-table-toolbar {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .ant-pro-table-form-search {
+    margin-bottom: 0 !important;
+    padding: 0 16px !important;
+    // height: 50px !important;
+
+    // overflow: hidden;
+    // background: #fff;
+  }
+}

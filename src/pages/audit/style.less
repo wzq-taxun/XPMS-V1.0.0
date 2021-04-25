@@ -1,0 +1,41 @@
+@import '~antd/es/style/themes/default.less';
+
+.tableContain {
+  background: #fff;
+  padding: 10px;
+  :global {
+    .ant-table-thead > tr > th {
+      background: #d3d4d5;
+    }
+  }
+
+  .clickRow {
+    background: #2f3f54;
+    cursor: pointer;
+    color: #fff;
+    &:hover {
+      td {
+        background: #2f3f54 !important;
+      }
+    }
+  }
+  .unClickRow {
+    cursor: pointer;
+  }
+
+  .opContain {
+    text-align: right;
+    button {
+      background: #2f3f54;
+      border: 0;
+      margin-left: 15px;
+      color: #fff;
+      border-radius: 5px;
+      padding: 2px 20px;
+    }
+  }
+}
+
+.rowSty {
+  cursor: pointer;
+}

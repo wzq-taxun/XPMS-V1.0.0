@@ -1,0 +1,138 @@
+@import '~antd/es/style/themes/default.less';
+
+.trendText {
+  margin-left: 8px;
+  color: @heading-color;
+}
+
+.shiftCard {
+  height: 100%;
+  border-radius: 6px;
+  :global {
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+  .infoCardHeader {
+    text-align: left;
+    padding: 20px 15px 10px 15px;
+    p {
+      margin: 0;
+    }
+  }
+
+  .infoCardLogo {
+    text-align: center;
+  }
+
+  .infoCardHotel {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+    p {
+      margin: 0;
+    }
+  }
+
+  .infoCardJb {
+    text-align: center;
+    padding-bottom: 15px;
+    > button {
+      background: #fff;
+      width: 100px;
+      height: 30px;
+      border: 1px solid #f08996;
+      border-radius: 15px;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 1px 1px 6px 4px #fceaeb;
+    }
+  }
+
+  .myDivider {
+    margin: 0;
+  }
+
+  .infoCardDate {
+    text-align: center;
+    line-height: 35px;
+    .shift {
+      margin-left: 10px;
+    }
+  }
+}
+
+.shiftModal {
+  :global {
+    .ant-modal-close {
+      color: #fff;
+    }
+    .ant-modal-header {
+      background: #2f3754;
+      text-align: center;
+    }
+    .ant-modal-title {
+      color: #fff;
+    }
+  }
+
+  .shiftBt {
+    border: 1px solid #d7d7d7;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    outline: none;
+    width: calc(50% - 10px);
+    text-align: center;
+    cursor: pointer;
+  }
+  .active {
+    background: #d7d7d7;
+  }
+}
+
+.rowSty {
+  cursor: pointer;
+}
+
+.chartTabs {
+  height: 40px;
+  border-bottom: 1px solid #d9d9d9;
+  .dropBt {
+    height: 35px;
+    margin-top: 5px;
+    width: 180px;
+    border: 0;
+    margin-left: 20px;
+    background: #eff1f5;
+    border-radius: 6px 6px 0 0;
+    > span {
+      text-align: left;
+    }
+  }
+}
+
+.charTable {
+  border-collapse: collapse;
+  width: 100%;
+  td {
+    border: 1px solid #e1e1e1;
+    text-align: right;
+    padding: 5px;
+  }
+}
+
+.chartCard {
+  background: #fff;
+  .ccTitle {
+    color: black;
+    line-height: 30px;
+    padding: 20px 0;
+    .title {
+      display: inline-block;
+      border-left: 2px solid red;
+      padding: 0 15px;
+    }
+  }
+}
